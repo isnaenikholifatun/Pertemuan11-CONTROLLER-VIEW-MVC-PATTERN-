@@ -1,11 +1,12 @@
 # Tugas Pertemuan 11 - CONTROLLER, VIEW, & BLADE COMPONENT (MVC PATTERN)
 
-**Nama:** Isnaeni Kholifatun
-**NIM:** 60324075
-**Prodi:** Informatika
-**Semester:** 4
-**Repository:** []
-
+---
+**Nama:** Isnaeni Kholifatun  
+**NIM:** 60324075  
+**Prodi:** Informatika  
+**Semester:** 4  
+**Mata Kuliah:** Pemrograman Web II  
+**Repository:** [https://github.com/isnaenikholifatun/-Tugas-Pertemuan-9-PENGENALAN-FRAMEWORK-LARAVEL-MVC]
 ---
 
 ## Tugas 1 : Membuat halaman dashboard yang menampilkan ringkasan statistik perpustakaan.
@@ -25,10 +26,10 @@
 * Anggota nonaktif
 * List 5 buku terbaru
 * 5 anggota terbaru
-
+---
 #### 1. Dokumentasi Tugas
-![1.Controller](screenshots-makecontrollerdashboard.png)
-![2.TampilanDataDashboard](screenshots-dashboard.jpeg)
+![1.Controller](screenshots/makecontrollerdashboard.png)
+![2.TampilanDataDashboard](screenshots/dashboard.jpeg)
 
 ---
 
@@ -44,10 +45,10 @@
 * Badge kategori (Programming, Database, dll)
 * Status ketersediaan (Tersedia/Habis)
 * Tombol aksi (Detail & Edit) bersifat kondisional
-
+---
 **Dokumentasi Tugas 2:**
-![1.Generate Component](screenshots-makecomponentbukucard.png)
-![2.Blade Component Buku Card](screenshots-bladecomponentbukucard.jpeg)
+![1.Generate Component](screenshots/makecomponentbukucard.png)
+![2.Blade Component Buku Card](screenshots/bladecomponentbukucard.jpeg)
 
 ---
 
@@ -74,9 +75,9 @@
     $bukus = $query->latest()->get();
     return view('buku.index', compact('bukus'));
 }`
-
+---
 **Dokumentasi Tugas 3:**
-![1.Form Search BUku](screenshots-formsearch.png)
-![2.Pencarian Berdasarkan Judul `Modern Web Design`](screenshots.searchjudulpng)
-![3.Hasil Pencarian Judul](screenshots-hasilpencarian.png)
+![1.Form Search BUku](screenshots/formsearch.png)
+![2.Pencarian Berdasarkan Judul `Modern Web Design`](screenshots/searchjudulpng)
+![3.Hasil Pencarian Judul](screenshots/hasilpencarian.png)
 
