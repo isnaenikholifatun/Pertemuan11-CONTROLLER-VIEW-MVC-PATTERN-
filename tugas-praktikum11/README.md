@@ -6,7 +6,7 @@
 * **Prodi:** Informatika
 * **Semester:** 4
 * **Mata Kuliah:** Pemrograman Web II
-* **Repository:** [https://github.com/isnaenikholifatun/Pertemuan11-CONTROLLER-VIEW-MVC-PATTERN-]
+* **Repository:** [https://github.com/isnaenikholifatun/Pertemuan11-CONTROLLER-VIEW-MVC-PATTERN-](https://github.com/isnaenikholifatun/Pertemuan11-CONTROLLER-VIEW-MVC-PATTERN-)
 
 ---
 
@@ -46,16 +46,10 @@
 * Status ketersediaan (Tersedia/Habis)
 * Tombol aksi (Detail & Edit) bersifat kondisional
 
-## Tugas 2 : Membuat Blade Component reusable untuk menampilkan card buku.
-
-**Perintah yang dijalankan:**
-* Generate Component: `php artisan make:component BukuCard`
-* Mengatur Component Properties (`$buku` dan `$showActions`) pada file `BukuCard.php`
-* Mendesain layout card yang menarik di `buku-card.blade.php`
-
 **Component yang Digunakan:**
 ```html
-<x-buku-card :buku="$buku" />```
+<x-buku-card :buku="$buku" />
+```
 
 **Screenshot:**
 
@@ -78,24 +72,13 @@
 * Input keyword (search judul, pengarang, penerbit)
 * Filter kategori, tahun, dan ketersediaan
 
-**Controller Method:**
-```php
-public function search(Request $request)
-{
-    $query = Buku::query();
-    
-    // Filter implementation
-    
-    $bukus = $query->latest()->get();
-    return view('buku.index', compact('bukus'));
-}```
-
 **Screenshot:**
-### 1. Form Search Buku
+
+#### 1. Form Search Buku
 ![1.Form Search Buku](screenshots/formsearch.png)
 
-### 2. Proses Pencarian Berdasarkan Judul
+#### 2. Proses Pencarian Berdasarkan Judul
 ![2.Pencarian Berdasarkan Judul](screenshots/searchjudul.png)
 
-### 3. Hasil Pencarian Judul
+#### 3. Hasil Pencarian Judul
 ![3.Hasil Pencarian Judul](screenshots/hasilpencarianjudul.png)
