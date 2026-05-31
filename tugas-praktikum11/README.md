@@ -22,7 +22,7 @@
 * Total buku, Buku tersedia, Buku habis
 * Total anggota, Anggota aktif, Anggota nonaktif
 * List 5 buku terbaru & 5 anggota terbaru
-
+---
 **Screenshot:**
 
 #### 1. Perintah Membuat Controller
@@ -46,11 +46,12 @@
 * Status ketersediaan (Tersedia/Habis)
 * Tombol aksi (Detail & Edit) bersifat kondisional
 
+---
 **Component yang Digunakan:**
 ```html
 <x-buku-card :buku="$buku" />
 ```
-
+---
 **Screenshot:**
 
 #### 1. Perintah Generate Component
@@ -71,7 +72,7 @@
 **Fitur Search & Filter:**
 * Input keyword (search judul, pengarang, penerbit)
 * Filter kategori, tahun, dan ketersediaan
-
+---
 **Screenshot:**
 
 #### 1. Form Search Buku
