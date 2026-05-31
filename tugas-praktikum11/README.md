@@ -46,6 +46,17 @@
 * Status ketersediaan (Tersedia/Habis)
 * Tombol aksi (Detail & Edit) bersifat kondisional
 
+## Tugas 2 : Membuat Blade Component reusable untuk menampilkan card buku.
+
+**Perintah yang dijalankan:**
+* Generate Component: `php artisan make:component BukuCard`
+* Mengatur Component Properties (`$buku` dan `$showActions`) pada file `BukuCard.php`
+* Mendesain layout card yang menarik di `buku-card.blade.php`
+
+**Component yang Digunakan:**
+```html
+<x-buku-card :buku="$buku" />```
+
 **Screenshot:**
 
 #### 1. Perintah Generate Component
@@ -79,6 +90,7 @@ public function search(Request $request)
     return view('buku.index', compact('bukus'));
 }```
 
+**Screenshot:**
 ### 1. Form Search Buku
 ![1.Form Search Buku](screenshots/formsearch.png)
 
